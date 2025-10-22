@@ -1,17 +1,26 @@
-# Automated-bash-script
+# 🚀 Automated Deployment Bash Script — HNG DevOps Stage 1
 
-A simple Flask application and an automated deployment script for the HNG DevOps Stage 1 task.
+This project automates the deployment of a Dockerized Flask app locally, simulating a production-grade DevOps workflow.  
+It includes automated build, container orchestration, Nginx reverse proxy, and health checks — all triggered by a single Bash script.
 
-This repo contains:
-- `app.py` — simple Flask app
-- `requirements.txt` — Python dependencies
-- `Dockerfile` and `docker-compose.yml` — container definitions
-- `deploy.sh` — automated deployment script (added by assistant)
+---
 
-## Quick usage
+## 🧠 Features
+- Automated Docker build and container startup
+- Nginx reverse proxy for local routing
+- Health and log verification
+- Idempotent re-runs
+- Single-command setup (`./deploy.sh`)
 
-1. Make sure your local repo contains the application files (`app.py`, `requirements.txt`, `Dockerfile`, `docker-compose.yml`).
-2. Make the deploy script executable:
+---
 
+## 🧩 Project Structure
 ```bash
-chmod +x deploy.sh
+Automated-bash-script/
+├── app.py
+├── requirements.txt
+├── Dockerfile
+├── nginx.conf
+├── docker-compose.yml
+├── deploy.sh
+└── README.md
